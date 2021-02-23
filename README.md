@@ -4,6 +4,9 @@
 # 介紹
 此程式搭配 <a href='https://chiachun0818.medium.com/jetson-nano-%E4%B9%8B-darknet%E8%A9%B3%E8%A7%A3%E4%BB%A5%E5%8F%8A%E6%9C%80%E7%B0%A1%E5%96%AE%E7%9A%84yolov4%E5%8D%B3%E6%99%82%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98-248e369b93c3'>Jetson Nano 之 Darknet詳解以及最簡單的yolov4即時影像辨識</a> 使用，我們來深入了解一下 `darknet.py`，解析之後對於可以使用的副函式都初步瞭解了再進行改寫，變成一個最簡單的yolov4應用，不同於官方的使用佇列 (queue) 的形式，我們使用較為簡單直覺的 OpenCV 來改寫。如果你是個新手可以先看看這篇 [Jetson Nano使用YOLOv4並透過Tensor RT 進行加速](https://chiachun0818.medium.com/jetson-nano%E4%BD%BF%E7%94%A8yolov4%E4%B8%A6%E9%80%8F%E9%81%8Etensor-rt-%E9%80%B2%E8%A1%8C%E5%8A%A0%E9%80%9F-174f5ad46bb0)
 
+# DEMO
+![運行結果](/figures/DEMO.gif)
+
 # 使用說明:
 首先要先建置darknet的環境，先下載 [darknet](https://github.com/AlexeyAB) 的github：
 ```
